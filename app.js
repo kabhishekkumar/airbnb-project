@@ -46,7 +46,7 @@ const store = MongoStore.create({
   crypto: {
     secret: process.env.SECRET,
   },
-  touchAfter: 24 * 3600, // time in seconds
+  touchAfter: 24 * 3600, // time in seconds h
 });
 
 store.on("error", function (err) {
